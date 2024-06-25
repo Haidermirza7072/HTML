@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> hover </title>
+    <style>
+            
+            .box1{
+                height: 500px;
+                width: 500px;
+                background-color: red;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                position: absolute;
+                left: 50%;
+                top:50%;
+                transform: translate(-50% , -50%);
+                box-shadow: 10px 10px 10px black;   
+            }
+            .box2{
+                height: 200px;
+                width: 200px;
+                background-color: #0000ff ;
+                           
+
+            }
+            .box2:hover{
+                transition: 5s;
+                transform: rotate(360deg);
+            }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box1">
+        <div class="box2"> </div>
+    </div> 
+
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+        <head>
+                <title> hover   </title>
+                
+        <style>
+            .red{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    position: absolute;
+    left: 500;
+    
+    
+}
+.button{
+    font-size: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20%;
+    z-index: 1;
+    
+}
+.red::before{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: purple;
+    position: absolute;
+    
+    left: -200;    
+}
+.red:hover::before{
+    left: 0%;
+    transition: 2s;
+}
+.red::after{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: blue;
+    position: absolute;
+    right: -200px;
+}
+.red:hover::after{
+    right: 0%;
+    transition: 2s;
+}
+.red span::before{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: cyan;
+    position: absolute;
+    bottom: 0%;
+    left: -50%;
+}
+.red:hover span::before{
+    left: 0%;
+    transition: 2s;
+}
+.red span:after{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0%;
+    right: -50%;
+}
+.red:hover span::after{
+    right: 0%;
+    transition: 2s;
+}
+        </style>
+        </head>
+
+        <body>
+            <div class="red"> 
+
+                <p class="button"> button</p>
+                <span></span>
+            </div>
+        </body>
+</html>

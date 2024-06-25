@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title> video </title>
+
+    <style>
+        .video{
+            display: flex;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+
+
+
+<!-- even iframe is used to attached to yoyube video  -->
+
+    <iframe width="250" height="250" src="https://www.youtube.com/embed/7H_W2RmzQsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+    
+<!-- youtubevideo with style  -->
+
+    <div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LdMoYYeW9g8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe>
+    </div>
+
+<!-- controls,autoplay,mutedand loop are the attribute or features of video tag for example control attribe use to show the controls of video which is used to play the video and pause same waye autoplay loop and muted are their  -->
+
+
+<video controls autoplay muted loop height="250" title="haider">
+    <source src="video.mp4" type="video/mp4"  >
+</video>
+
+<br>
+
+<br>
+<!-- video attribe can be written within tag also like given below  -->
+
+
+<video src="video.mp4" controls autoplay muted loop height="250" title="mirza" > </video> <br>
+
+<!-- poster attribute it is like thumbnail-->
+
+<video src="video.mp4" controls poster="spiderman.jpg" height="250"> </video> <br>
+
+<!-- audio tag -->
+
+<audio src="yeah-boy-114748.mp3" controls></audio><br>
+<audio src="tu.mp4" controls></audio>
+
+
+
+
+</body>
+</html>

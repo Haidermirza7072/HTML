@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* univarsal selector  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div > p{
+               color: green;
+               background-color: pink;
+             }
+
+        div span{
+            color: blue;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <!-- chlid selector   -->
+    <!-- div ke ander jo p he ussko applu hoga  -->
+    <div> 
+        <p>i am good  </p>
+    </div>
+    <!-- descendant selector  -->
+
+    <div>
+        <article>
+            <span> hello world </span> <!-- not applicable to this  -->
+        </article>
+    </div>
+    <!-- but to apply on this span tag with is in article tag we use descendant selector  -->
+  
+</body>
+</html>

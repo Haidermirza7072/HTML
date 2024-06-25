@@ -1,0 +1,265 @@
+.red{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    position: absolute;
+    left: 500;
+    overflow: hidden;
+    
+}
+.button{
+    font-size: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20%;
+    
+}
+.red::before{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: purple;
+    position: absolute;
+    left: -200;    
+}
+.red:hover::before{
+    left: 0%;
+    transition: 2s;
+}
+.red::after{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: blue;
+    position: absolute;
+    right: -200px;
+}
+.red:hover::after{
+    right: 0%;
+    transition: 2s;
+}
+.red span::before{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: cyan;
+    position: absolute;
+    bottom: 0%;
+    left: -50%;
+}
+.red:hover span::before{
+    left: 0%;
+    transition: 2s;
+}
+.red span:after{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0%;
+    right: -50%;
+}
+.red:hover span::after{
+    right: 0%;
+    transition: 2s;
+}
+
+ /* without hover */
+.red1{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    position: absolute;
+    left: 2000;
+    
+    
+}
+.red1::before{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: purple;
+    position: absolute;
+    left: -200;    
+}
+.red1:hover::before{
+    left: 0%;
+    transition: 2s;
+}
+.red1::after{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: blue;
+    position: absolute;
+    right: -200px;
+}
+.red1:hover::after{
+    right: 0%;
+    transition: 2s;
+}
+.red1 span::before{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: cyan;
+    position: absolute;
+    bottom: 0%;
+    left: -50%;
+}
+.red1:hover span::before{
+    left: 0%;
+    transition: 2s;
+}
+.red1 span:after{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0%;
+    right: -50%;
+}
+.red1:hover span::after{
+    right: 0%;
+    transition: 2s;
+}
+
+/* without hover */
+
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    position: absolute;
+    top: 800px;
+    left: 500px;
+    overflow: hidden;
+}
+
+.box:before{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: cyan;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+}
+.box:hover::before{
+    top: 0%;
+    transition: 2s;
+    left: 0%;
+}
+.box:after{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: yellow;
+    position: absolute;
+    right: -50%;
+    top: -50%;
+}
+.box:hover::after{
+    top: 0%;
+    right: 0%;
+    transition: 2s;
+}
+.box span::before{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: orange;
+    position: absolute;
+    right: -50%;
+    bottom: -50%;
+}
+.box:hover span::before{
+    bottom: 0%;
+    right: 0%;
+    transition: 2s;
+}
+.box span::after{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: royalblue;
+    position: absolute;
+    left: -50%;
+    bottom: -50%;
+}
+.box:hover span::after{
+    bottom: 0%;
+    left: 0%;
+    transition: 2s;
+}
+
+/* without hover  */
+
+.box1{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    position: absolute;
+    top: 800px;
+    left: 2000px;
+    
+}
+
+.box1:before{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: cyan;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+}
+.box1:hover::before{
+    top: 0%;
+    transition: 2s;
+    left: 0%;
+}
+.box1:after{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: yellow;
+    position: absolute;
+    right: -50%;
+    top: -50%;
+}
+.box1:hover::after{
+    top: 0%;
+    right: 0%;
+    transition: 2s;
+}
+.box1 span::before{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: orange;
+    position: absolute;
+    right: -50%;
+    bottom: -50%;
+}
+.box1:hover span::before{
+    bottom: 0%;
+    right: 0%;
+    transition: 2s;
+}
+.box1 span::after{
+    content: '';
+    height: 50%;
+    width: 50%;
+    background-color: royalblue;
+    position: absolute;
+    left: -50%;
+    bottom: -50%;
+}
+.box1:hover span::after{
+    bottom: 0%;
+    left: 0%;
+    transition: 2s;
+}

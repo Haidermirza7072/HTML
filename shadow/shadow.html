@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> shadows </title>
+    <style>
+        body{
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            box-shadow: 30px 30px 10px black;
+            /* first px deside the shadow in horisontal line means x and -x direction   */
+            /* seconde px deside the shadow in vertical line means y and -y  direction  */
+            /* third px decide the blur or opacity of shadow less number more brighten the shadow  larger the number blur the shadow with color  */
+
+        }
+        .text{
+            margin: 20%;
+            text-shadow: 20px 10px 5px black;
+        }
+        .box2{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            margin: 100px;
+            box-shadow: 0px 0px 30px 20px rgba(90, 90, 90, 0.5); 
+            /* first 3 point is same as first one just little bit change in fourth one  */
+            /* here fourth decide the width of shadow  */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+        <div class="text"> haider </div>
+    </div>
+
+    <div class="box2">
+
+    </div>
+    
+</body>
+</html>
