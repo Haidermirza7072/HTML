@@ -1,12 +1,79 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-      <title> spiderman</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Main Page</title>
+
+      <style>
+            body {
+                  font-family: Arial, sans-serif;
+                  background-color: #f4f4f9;
+                  text-align: center;
+                  margin: 0;
+                  padding: 20px;
+            }
+
+            h1 {
+                  color: #333;
+            }
+
+            nav {
+                  background-color: #222;
+                  padding: 15px;
+                  border-radius: 8px;
+                  margin-bottom: 30px;
+            }
+
+            nav a {
+                  color: white;
+                  text-decoration: none;
+                  margin: 0 15px;
+                  font-size: 18px;
+                  transition: color 0.3s, background 0.3s;
+                  padding: 8px 15px;
+                  border-radius: 5px;
+            }
+
+            nav a:hover {
+                  background: white;
+                  color: #222;
+            }
+
+            .gallery {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  gap: 20px;
+            }
+
+            .gallery img {
+                  border-radius: 10px;
+                  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                  transition: transform 0.3s;
+            }
+
+            .gallery img:hover {
+                  transform: scale(1.05);
+            }
+      </style>
 </head>
 
-       <a href="C:\Users\REHAN\Desktop\haider html\internal link\home.html"> HOME  </a> <br>
-       <a href="C:\Users\REHAN\Desktop\haider html\internal link\haircut.html"> spiderman  </a> <br>
-       <a href="C:\Users\REHAN\Desktop\haider html\internal link\car.html">   hitman </a> <br>
-       <a href="C:\Users\REHAN\Desktop\haider html\internal link\game.html">   GAME </a> <br>
+<body>
 
-<h1> this is sipderman page  </h1>
-<img src="images\spiderman.jpg" alt="spiderman" height="200px" width="200px">
+      <nav>
+            <a href="index.html">HOME</a>
+            <a href="haircut.html">HAIRCUT</a>
+            <a href="car.html">CAR</a>
+            <a href="game.html">GAME</a>
+      </nav>
+
+      <div class="gallery">
+            <h1> This is sipderman page </h1>
+            <img src="images\spiderman.jpg" alt="spiderman" height="200px" width="200px">
+      </div>
+
+</body>
+
+</html>
