@@ -1,0 +1,127 @@
+ /* Reset some default styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Image Covering Full Screen */
+body {
+    background: url('../images/1.avif') no-repeat center center/cover;
+    height: 300px;
+    /* position: relative; */
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+}
+
+.logo img {
+    width: 30%;
+    height: 30%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #e74c3c;
+}
+
+.navbar{
+    /* display: flex; */
+    /* text-align: center!important/; */
+    /* text-align: right; */
+
+}
+
+/* Center Content */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content input {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content input {
+        width: 90%;
+    }
+}
